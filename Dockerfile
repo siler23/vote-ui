@@ -3,6 +3,7 @@ FROM docker.io/python:latest
 
 # Install our requirements.txt
 ADD requirements.txt /opt/app-root/src/requirements.txt
+WORKDIR /opt/app-root/src/
 RUN pip install -r requirements.txt
 
 # Copy our code from the current folder to /app inside the container
