@@ -1,5 +1,5 @@
-# Using official python runtime base image
-FROM registry.redhat.io/ubi8/python-38:latest 
+# Using docker official python base image
+FROM docker.io/python:latest 
 
 # Install our requirements.txt
 ADD requirements.txt /opt/app-root/src/requirements.txt
